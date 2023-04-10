@@ -1,7 +1,7 @@
 import random
 
 def start():
-    choic = input("rock, paper, or scissore: ")
+    choic = input("rock, paper, or scissors: ")
     return choic
 
 def game():
@@ -49,7 +49,8 @@ def app():
     elif choose.lower() == "quit":
         return "Game Ended"
     else:
-        return "Invalid Syntax, Try Again" and app()
+        print("Invalid Syntax, Please try again")
+        return app()
 
 
 print(app())
